@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Overpass',sans-serif;
+    min-height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#global{
+    background-color: var(--Dark-Blue);
+    border-radius: 12px;
+    width: 280px;
+    padding: 15px;
+}
+#thankyou{
+    display: none;
+}
+/*Rating State-start*/
+#rating img{
+    width: 1.2rem;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(48, 55, 65);
+    margin-bottom: 5px;
+}
+#rating h3{
+    color: var(--White);
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 5px; 
+}
+#rating p{
+    word-spacing: 1px;
+    color: var(--Light-Grey);
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+#rating .btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#rating .btns button{  
+    font-size: .6em;
+    font-weight: 700; 
+    padding: 5px;
+    border: 0;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    color: var(--Light-Grey);
+    background-color: rgb(48, 55, 65);
+    margin-bottom: 15px;
+}
+#rating>button{
+    font-size: .6em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0;
+    padding: .5rem;
+    border-radius: 15px;
+    width: 100%;
+    color: var(--Dark-Blue);
+    background-color: var(--Orange);
+}
+/*Rating State-end*/
+
+/*Active Rating State-first*/
+#rating .btns button:hover{
+    color: var(--Dark-Blue);
+    background-color: var(--White);
+}
+#rating .btns button:focus {
+    color: var(--Dark-Blue);
+    background-color: var(--Orange);
+}
+
+#rating>button:focus{
+    background-color: var(--White);
+}
+/*Active Rating State-end*/
+
+/*Thankyou State-first*/
+#thankyou{
+    padding: 10px 0px;
+    text-align: center;
+}
+#thankyou img{
+    width: 45%;
+    margin-bottom: 12px;
+}
+#thankyou .ratingspace{
+    color: var(--Orange);
+    margin-bottom: 15px;
+    background-color: rgb(48, 55, 65);
+    border: 0;
+    border-radius: 15px;
+    padding: .2rem .7rem;
+    width: max-content;
+    font-size: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#thankyou h3{
+    color: var(--White);
+    margin-bottom: 9px;
+}
+#thankyou p{
+    word-spacing: 1px;
+    color: var(--Light-Grey);
+    font-size: 11px;
+    margin-bottom: 10px;
+    line-height: 14px;
+}
+/*Thankyou State-end*/
