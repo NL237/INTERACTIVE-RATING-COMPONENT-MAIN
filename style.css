@@ -48,14 +48,14 @@ body{
     font-size: 10px;
     margin-bottom: 10px;
 }
-#rating .btns{
+#rating #btns{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#rating .btns button{  
+#rating #btns button{  
     font-size: .6em;
-    font-weight: 700; 
+    font-weight: 800; 
     padding: 5px;
     border: 0;
     border-radius: 50%;
@@ -79,11 +79,11 @@ body{
 /*Rating State-end*/
 
 /*Active Rating State-first*/
-#rating .btns button:hover{
+#rating #btns button:hover{
     color: var(--Dark-Blue);
     background-color: var(--White);
 }
-#rating .btns button:focus {
+#rating #btns button:focus {
     color: var(--Dark-Blue);
     background-color: var(--Orange);
 }
@@ -103,6 +103,7 @@ body{
     margin-bottom: 12px;
 }
 #thankyou .ratingspace{
+    margin: 0 auto;
     color: var(--Orange);
     margin-bottom: 15px;
     background-color: rgb(48, 55, 65);
@@ -111,8 +112,6 @@ body{
     padding: .2rem .7rem;
     width: max-content;
     font-size: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 #thankyou h3{
     color: var(--White);
